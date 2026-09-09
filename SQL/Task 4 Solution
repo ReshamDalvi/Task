@@ -206,7 +206,8 @@ GROUP BY customer_type HAVING Total_Orders > 3;
 -- Sales >= 4000 → High
 -- Sales >= 2000 → Medium
 -- Otherwise → Low
-SELECT order_id, sales , IF(sales >= 4000, "High", IF(sales >= 2000, "Medium", "Low")) AS Order_Category FROM dmart_data;
+SELECT order_id, sales , IF(sales >= 4000, "High", IF(sales >= 2000, "Medium", "Low"))
+AS Order_Category FROM dmart_data;
 
 -- Categorize profit:
 -- Profit >= 800 → High Profit
