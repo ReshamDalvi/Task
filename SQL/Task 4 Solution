@@ -4,8 +4,8 @@ USE banking_db;
 SELECT * FROM dmart_data;
 
 DESCRIBE dmart_data ; 
-# The dmart_data file was extracted from Excel with columns initially stored as text. 
-# Required constraints and SQL commands will be applied for proper data handling.
+# The dmart_data file was extracted from Excel with columns initially stored as text or numbers.
+# Required constraints and SQL commands will be applied for proper data consistency.
 
 # ALTER TABLE table_name RENAME COLUMN old_name TO new_name;
 ALTER TABLE dmart_data RENAME COLUMN `ï»¿order_id` TO order_id; 
